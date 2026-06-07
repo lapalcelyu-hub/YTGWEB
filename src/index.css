@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600&family=JetBrains+Mono:wght@200;300;400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Serif SC", "Songti SC", "STSong", "SimSun", ui-serif, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    background-color: #120A07;
+    color: #F7F4EF;
+  }
+}
+
+/* Elegant traditional Chinese textured backgrounds */
+.bg-parchment {
+  background-color: #FBF8F3;
+  color: #2F1E14;
+}
+
+.text-gold {
+  color: #E5D285;
+}
+
+.bg-wood-dark {
+  background-color: #120A07;
+}
+
+.border-bronze {
+  border-color: rgba(229, 210, 133, 0.25);
+}
+
+/* Hide scrollbars for sliders while supporting desktop swipe/drag */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom minimal scrollbar for modal/drawers */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #180F0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3D2216;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5E3D20;
+}
+
+/* Asian Cloud/Ruyi repetitive outline overlay from logo background */
+.ruyi-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cpath d='M22,12 C18,8 14,8 12,12 C10,16 14,20 22,22 C30,20 34,16 32,12 C30,8 26,8 22,12 Z' fill='none' stroke='%23E5D285' stroke-width='0.4' stroke-opacity='0.15'/%3E%3C/svg%3E");
+}
+
+/* Sandalwood shadow theme */
+.shadow-bronze-sm {
+  box-shadow: 0 2px 8px rgba(94, 61, 32, 0.2);
+}
+
+.shadow-bronze-lg {
+  box-shadow: 0 10px 30px rgba(18, 10, 7, 0.6);
+}

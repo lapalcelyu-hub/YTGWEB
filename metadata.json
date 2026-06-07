@@ -1,0 +1,6 @@
+{
+  "name": "雍檀阁古典家具品鉴馆",
+  "description": "专为手机竖版浏览定制的高级古典家具H5品鉴馆，采用中式高贵配色、非遗全榫卯榫卯结构展示、匠心工坊大师平生以及互动品鉴沙龙预约，极致丝滑动效体验。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
