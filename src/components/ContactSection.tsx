@@ -26,9 +26,13 @@ export default function ContactSection() {
           <div className="bg-[#1c120c]/90 border border-[#E5D285]/20 rounded-xl p-3.5 flex gap-3 shadow-md">
             <MapPin className="w-4 h-4 text-[#E5D285] shrink-0 mt-0.5" />
             <div>
-              <h4 className="text-[10px] font-mono text-stone-400 tracking-widest uppercase">传非遗承研究中心 & 品鉴展馆</h4>
-              <p className="text-xs text-stone-200 leading-relaxed mt-1 font-light text-justify">
+              <h4 className="text-[10px] font-mono text-stone-400 tracking-widest uppercase mb-1">品鉴展馆&生产厂址</h4>
+              <p className="text-xs text-stone-200 leading-relaxed font-light text-justify">
                 {CONTACT_INFO.address}
+              </p>
+              <div className="h-px w-full bg-[#E5D285]/10 my-1.5" />
+              <p className="text-xs text-stone-200 leading-relaxed font-light text-justify">
+                {CONTACT_INFO.address2}
               </p>
             </div>
           </div>
@@ -71,20 +75,28 @@ export default function ContactSection() {
             </div>
             <span className="text-[11px] text-[#E5D285] font-mono font-light tracking-wider">{CONTACT_INFO.hours}</span>
           </div>
+
+          {/* WeChat QR Code */}
+          <div className="bg-[#1c120c]/90 border border-[#E5D285]/20 rounded-xl p-4 flex flex-col items-center justify-center shadow-md">
+            <h4 className="text-[10px] font-mono text-[#E5D285] tracking-widest uppercase mb-3 flex items-center gap-1.5">
+              <MessageCircle className="w-4 h-4" />
+              微信咨询
+            </h4>
+            <div className="bg-white p-2 rounded-lg">
+              <img 
+                src="/廖宇微信.jpg" 
+                alt="主理人微信" 
+                className="w-40 h-auto object-contain"
+              />
+            </div>
+            <p className="text-[10px] text-stone-400 mt-3 tracking-widest">截屏保存后在微信中扫一扫</p>
+          </div>
         </div>
 
         {/* Footer info & handles */}
         <div className="mt-6 pt-4 border-t border-[#E5D285]/15 text-center">
-          <div className="flex justify-center gap-4 mb-2 text-stone-400">
-            <span className="flex items-center gap-1 text-[11px] font-mono hover:text-[#E5D285] transition-colors cursor-pointer">
-              <MessageCircle className="w-3.5 h-3.5 text-[#E5D285]" /> 微信: {CONTACT_INFO.socials.wechat}
-            </span>
-            <span className="flex items-center gap-1 text-[11px] font-mono hover:text-[#E5D285] transition-colors cursor-pointer">
-              <Share2 className="w-3.5 h-3.5 text-[#E5D285]" /> 小红书: {CONTACT_INFO.socials.xiaohongshu}
-            </span>
-          </div>
           <p className="text-[9.5px] text-stone-500 font-mono tracking-widest mt-2">
-            雍檀阁非遗工坊馆 • © SINCE 1984 ALL RIGHTS RESERVED
+            雍檀阁 • © SINCE 1984 ALL RIGHTS RESERVED
           </p>
         </div>
       </div>

@@ -26,6 +26,15 @@ export interface Product {
   image: string;
 }
 
+export type GalleryCategory = '全部' | '客厅沙发' | '餐厅饭桌' | '书房' | '卧室';
+
+export interface GalleryItem {
+  id: string;
+  category: GalleryCategory;
+  name: string;
+  image: string;
+}
+
 export interface NewsItem {
   id: string;
   title: string;
@@ -35,4 +44,13 @@ export interface NewsItem {
   content: string;
   image: string;
   readTime: string;
+  imageCaption?: string;
+}
+
+export interface VideoItem {
+  id: string;
+  title: string;
+  description: string;
+  thumbnail: string;
+  videoUrl: string;
 }

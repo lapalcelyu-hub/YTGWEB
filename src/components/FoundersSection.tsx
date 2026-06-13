@@ -7,27 +7,15 @@ import { Founder } from "../types";
 export default function FoundersSection() {
   const [selectedFounder, setSelectedFounder] = useState<Founder | null>(null);
 
-  // High-fidelity custom vector icons represent craftsmen instruments of Yongtange
-  const renderFounderIcon = (type: string) => {
-    if (type === "liao") {
-      return (
-        <img
-          src="/liaoyangbiao.jpg"
-          alt="Liao Yangbiao"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
-      );
-    } else {
-      return (
-        <img
-          src="/zhuyi.jpg"
-          alt="Zhu Yi"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
-      );
-    }
+  const renderFounderIcon = (src: string) => {
+    return (
+      <img
+        src={src}
+        alt="Founder"
+        className="w-full h-full object-cover object-[center_15%]"
+        referrerPolicy="no-referrer"
+      />
+    );
   };
 
   return (
